@@ -1,23 +1,17 @@
-Porting existing PIL-based code to Pillow
+迁移已有的 PIL 代码到 Pillow
 =========================================
 
-Pillow is a functional drop-in replacement for the Python Imaging Library. To
-run your existing PIL-compatible code with Pillow, it needs to be modified to
-import the ``Image`` module from the ``PIL`` namespace *instead* of the
-global namespace. Change this::
+Pillow 是对 PIL 的功能增加，想要在 Pillow 下运行 PIL 的代码，只需要：
+把这个：:
 
     import Image
 
-to this::
+修改成：:
 
     from PIL import Image
 
-The :py:mod:`_imaging` module has been moved. You can now import it like this::
+ :py:mod:`_imaging` 模块已经被移除，现在可以这样导入：:
 
     from PIL.Image import core as _imaging
 
-The image plugin loading mechanism has changed. Pillow no longer
-automatically imports any file in the Python path with a name ending
-in :file:`ImagePlugin.py`. You will need to import your image plugin
-manually.
-
+图像插件导入机制已经改变。Pillow 不会自动导入以 :file:`ImagePlugin.py` 结尾的文件。你需要手动导入。

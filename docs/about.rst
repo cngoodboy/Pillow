@@ -4,12 +4,12 @@
 愿景
 -----
 
-分支作者的愿景是活跃 PIL 的开发，通过以下途径：
+分支作者的愿景是通过以下途径活跃 PIL 的开发：
 
-- 在 `Travis CI`_ 持续测试 
-- 在 `GitHub`_ 公开开发活动
-- 定期发布到 `Python Package Index`_
-- 在 `Image-SIG`_ 争取社区参与与贡献 
+- 在 `Travis CI`_ 持续测试 ；
+- 在 `GitHub`_ 公开开发活动；
+- 定期发布到 `Python Package Index`_ ；
+- 在 `Image-SIG`_ 争取社区参与与贡献 。
 
 .. _Travis CI: https://travis-ci.org/python-imaging/Pillow
 .. _GitHub: https://github.com/python-imaging/Pillow
@@ -19,7 +19,7 @@
 许可证
 -------
 
-和PIL一样, Pillow 使用 MIT-like `PIL Software License <http://www.pythonware.com/products/pil/license.htm>`::
+和PIL一样, Pillow 使用 MIT-like `PIL Software License <http://www.pythonware.com/products/pil/license.htm>`_ ::
 
     Software License
 
@@ -34,32 +34,27 @@
 
     SECRET LABS AB AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL SECRET LABS AB OR THE AUTHOR BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-为什么fork？
+为什么派生分支？
 -----------
 
-PIL is not setuptools compatible. Please see `this Image-SIG post`_ for a more
-detailed explanation. Also, PIL's current bi-yearly (or greater) release
-schedule is too infrequent to accommodate the large number and frequency of
-issues reported.
+PIL 不兼容setuptools。请阅读 `this Image-SIG post`_ 获取更多解释。而且 PIL 计划一年更新两次太慢了不能解决大量issues报告。
 
 .. _this Image-SIG post: https://mail.python.org/pipermail/image-sig/2010-August/006480.html
 
-关于PIL
+关于 PIL 库
 ---------------
 
 .. note::
 
-    Prior to Pillow 2.0.0, very few image code changes were made. Pillow 2.0.0
-    added Python 3 support and includes many bug fixes from many contributors.
+    Pillow 2.0.0 之前，Pillow相对于 PIL 更改很少。Pillow 2.0.0
+    开始增加 Python 3 的支持进行了很多 Bug 修正。
 
-As more time passes since the last PIL release, the likelihood of a new PIL
-release decreases. However, we've yet to hear an official "PIL is dead"
-announcement. So if you still want to support PIL, please
-`report issues here first`_, then
+距离上次 PIL 发布更新的时间越久，PIL 更新的可能性越小。然而，PIL官方还没有正式宣布PIL死亡，如果你还想支持 PIL 可以先报告给 PIL ：
+`report issues here first`_, 然后报告给 Pillow 
 `open the corresponding Pillow tickets here`_.
 
 .. _report issues here first: https://bitbucket.org/effbot/pil-2009-raclette/issues
 
 .. _open the corresponding Pillow tickets here: https://github.com/python-imaging/Pillow/issues
 
-Please provide a link to the PIL ticket so we can track the issue(s) upstream.
+报告给 Pillow 的时候请带上 PIL 的链接方便我们跟踪。

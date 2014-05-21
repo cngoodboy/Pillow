@@ -1,7 +1,7 @@
 快速入门
 ========
 
-.. note:: 译者注：专有名词尽量不翻译，比如bands, modes等请参考概念文档。
+.. note:: 译者注：编程名词和专业名词尽量不翻译，比如bands, modes等请参考 :doc:`概念 <handbook/concepts>` 。
 
 使用 Image class
 ---------------------
@@ -357,7 +357,7 @@ You can adjust contrast, brightness, color balance and sharpness in this way.
     enh = ImageEnhance.Contrast(im)
     enh.enhance(1.3).show("30% more contrast")
 
-Image sequences
+多帧图像序列
 ---------------
 
 The Python Imaging Library contains some basic support for image sequences
@@ -369,7 +369,7 @@ When you open a sequence file, PIL automatically loads the first frame in the
 sequence. You can use the seek and tell methods to move between different
 frames:
 
-Reading sequences
+读取序列
 ^^^^^^^^^^^^^^^^^
 
 ::
@@ -396,7 +396,7 @@ have to reopen it.
 The following iterator class lets you to use the for-statement to loop over the
 sequence:
 
-A sequence iterator class
+序列迭代 class
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
@@ -416,7 +416,7 @@ A sequence iterator class
         # ...do something to frame...
 
 
-Postscript printing
+Postscript 打印
 -------------------
 
 The Python Imaging Library includes functions to print images, text and
@@ -448,7 +448,7 @@ Drawing Postscript
 
     ps.end_document()
 
-More on reading images
+更多关于读取图像
 ----------------------
 
 As described earlier, the :py:func:`~PIL.Image.open` function of the
@@ -464,7 +464,7 @@ You can use a file-like object instead of the filename. The object must
 implement :py:meth:`~file.read`, :py:meth:`~file.seek` and
 :py:meth:`~file.tell` methods, and be opened in binary mode.
 
-Reading from an open file
+从文件读取
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
@@ -475,7 +475,7 @@ Reading from an open file
 To read an image from string data, use the :py:class:`~StringIO.StringIO`
 class:
 
-Reading from a string
+从 string 读取
 ^^^^^^^^^^^^^^^^^^^^^
 
 ::
@@ -490,7 +490,7 @@ image header. In addition, seek will also be used when the image data is read
 tar file, you can use the :py:class:`~PIL.ContainerIO` or
 :py:class:`~PIL.TarIO` modules to access it.
 
-Reading from a tar archive
+从压缩包读取
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
@@ -500,7 +500,7 @@ Reading from a tar archive
     fp = TarIO.TarIO("Imaging.tar", "Imaging/test/lena.ppm")
     im = Image.open(fp)
 
-Controlling the decoder
+控制解码器
 -----------------------
 
 Some decoders allow you to manipulate the image while reading it from a file.

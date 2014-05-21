@@ -20,7 +20,7 @@
     下面的指南将会安装支持大多数格式的 Pillow。
     查看 :ref:`external-libraries` 了解安装外部库的信息。这个页面包含了特定平台的安装。
 
-你可以使用 :command:`pip`: 命令安装Pillow：
+你可以使用 :command:`pip` 命令安装Pillow：
 
     $ pip install Pillow
 
@@ -30,7 +30,7 @@ not support them)::
 
     $ easy_install Pillow
 
-或者从 PyPI 下载 `compressed archive from PyPI`_, 解压，进入目录运行::
+或者从 PyPI 下载 `compressed archive from PyPI`_ ，解压，进入目录运行::
 
     $ python setup.py install
 
@@ -41,39 +41,36 @@ not support them)::
 外部库
 ------------------
 
-许多 Pillow 的功能需要外部库的支持:
+Pillow 的许多功能需要外部库的支持:
 
-* **libjpeg** provides JPEG functionality.
+* **libjpeg** 提供 JPEG 相关功能
 
-  * Pillow has been tested with libjpeg versions **6b**, **8**, and **9**
+  * Pillow 已经在这些版本测试过：versions **6b**, **8**, and **9**
 
-* **zlib** provides access to compressed PNGs
+* **zlib** 提供压缩 PNG 功能
 
-* **libtiff** provides group4 tiff functionality
+* **libtiff** 提供 group4 tiff 功能
 
-  * Pillow has been tested with libtiff versions **3.x** and **4.0**
+  * Pillow 已经在这些版本测试过：versions **3.x** and **4.0**
 
-* **libfreetype** provides type related services
+* **libfreetype** 提供类型相关服务
 
 * **littlecms** provides color management
 
-  * Pillow version 2.2.1 and below uses liblcms1, Pillow 2.3.0 and
-    above uses liblcms2. Tested with **1.19** and **2.2**.
+  * Pillow  2.2.1 以及更低版本使用 liblcms1, Pillow 2.3.0 以及更高版本使用 liblcms2. 在这些版本测试通过： **1.19** and **2.2**.
 
-* **libwebp** provides the Webp format.
+* **libwebp** 提供 webp 相关功能
 
-  * Pillow has been tested with version **0.1.3**, which does not read
-    transparent webp files. Versions **0.3.0** and **0.4.0** support
-    transparency. 
+  * Pillow已经在这些版本测试过： version **0.1.3**不能读取透明webp图像， Versions **0.3.0** and **0.4.0** 支持透明。
 
-* **tcl/tk** provides support for tkinter bitmap and photo images. 
+* **tcl/tk** 提供 tkinter bitmap and photo images 的支持
 
-* **openjpeg** provides JPEG 2000 functionality. 
+* **openjpeg** 提供 JPEG 2000 功能 
 
-  * Pillow has been tested with openjpeg **2.0.0**.
+  * Pillow 在这些版本测试通过： **2.0.0**.
 
-如果机器上已经使用标准方法安装了这些库 (e.g. :file:`/usr` or :file:`/usr/local`), 那么不需要进行多余的配置了。如果它们安装在非标准目录, 你可能需要配置 setuptools 以使用这些目录。 (i.e. by editing
-:file:`setup.py` and/or :file:`setup.cfg`). 当你安装好依赖包之后, r运行::
+如果机器上已经使用标准方法在标准目录安装了这些库 (e.g. :file:`/usr` or :file:`/usr/local`), 那么不需要进行多余的配置了。如果它们安装在非标准目录，你可能需要配置 setuptools 以使用这些目录。 (i.e. by editing
+:file:`setup.py` and/or :file:`setup.cfg`). 当你安装好依赖包之后, 运行::
 
     $ pip install Pillow
 
@@ -86,7 +83,7 @@ Linux 下安装
 
 .. note::
 
-    你 *不需要* 安装所有的外部库如果你只想让 Pillow 基本能运行。
+    你 **不需要** 安装所有的外部库如果你只想让 Pillow 基本能运行。
 
 **我们不为 Linux 提供二进制文件** 如果你不是从源码构建的 Python , 那么先确定你安装了 Python 开发环境，在 Debian
 或 Ubuntu::
@@ -97,7 +94,7 @@ Linux 下安装
 
     $ sudo apt-get install python3-dev python3-setuptools
 
-在Fedora, 命令是::
+在 **Fedora** , 命令是::
     
     $ sudo yum install python-devel
 
@@ -106,7 +103,7 @@ Linux 下安装
     $ sudo apt-get install libtiff4-dev libjpeg62-dev zlib1g-dev \
         libfreetype6-dev tcl8.5-dev tk8.5-dev python-tk
 
-在 **Ubuntu 12.04 LTS** or **Raspian Wheezy
+在 **Ubuntu 12.04 LTS** 或者 **Raspian Wheezy
 7.0** 安装依赖包::
 
     $ sudo apt-get install libtiff4-dev libjpeg8-dev zlib1g-dev \
@@ -123,12 +120,12 @@ Mac OS X 下安装
 
 .. note::
 
-    你 *不需要* 安装所有的外部库如果你只想让 Pillow 基本能运行。
+    你 **不需要** 安装所有的外部库如果你只想让 Pillow 基本能运行。
 
-**我们不为 OS X 提供二进制文件**, 所以你需要先安装 Xcode 才能安装 Pillow 。 (XCode 4.2 on 10.6 可以和官方 Python 二进制版本使用。或者使用任意版本 XCode 自己编译 Python.)
+**我们不为 OS X 提供二进制文件**，所以你需要先安装 Xcode 才能安装 Pillow 。 (XCode 4.2 on 10.6 可以和官方 Python 二进制版本使用。或者使用任意版本 XCode 自己编译 Python。)
 
 安装依赖包最简单的方法是使用 `Homebrew
-<http://mxcl.github.com/homebrew/>`_. 安装 Homebrew 之后, 运行::
+<http://mxcl.github.com/homebrew/>`_。安装 Homebrew 之后，运行::
 
     $ brew install libtiff libjpeg webp little-cms2
 
@@ -163,9 +160,7 @@ Python Wheels
 
     $ pip install --use-wheel Pillow
 
-If the above does not work, it's likely because we haven't uploaded a
-wheel for the latest version of Pillow. In that case, try pinning it
-to a specific version:
+如果上面都不行，尝试安装指定版本：
 
 ::
 
@@ -175,15 +170,11 @@ to a specific version:
 平台支持
 ----------------
 
-Current platform support for Pillow. Binary distributions are contributed for
-each release on a volunteer basis, but the source should compile and run
-everywhere platform support is listed. In general, we aim to support all
-current versions of Linux, OS X, and Windows.
+下面是平台支持情况，一般来说，我们致力于支持大多数平台。
 
 .. note::
 
-    Contributors please test on your platform, edit this document, and send a
-    pull request.
+    如果你在某平台测试过，编辑这个文件然后在 Github 提交 request 。
 
 +----------------------------------+-------------+------------------------------+------------------------------+-----------------------+ 
 |**Operating system**              |**Supported**|**Tested Python versions**    |**Tested Pillow versions**    |**Tested processors**  |

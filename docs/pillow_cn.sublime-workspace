@@ -1,0 +1,572 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"str",
+				"strIO"
+			],
+			[
+				"img",
+				"image_file"
+			],
+			[
+				"image",
+				"image_file"
+			],
+			[
+				"im",
+				"image_file"
+			],
+			[
+				"ret",
+				"returns"
+			],
+			[
+				"noteb",
+				"notebook_list"
+			],
+			[
+				"Num",
+				"Number_deleted"
+			],
+			[
+				"note",
+				"notebook_list"
+			],
+			[
+				"not",
+				"notebook"
+			],
+			[
+				"f",
+				"fetchall"
+			],
+			[
+				"no",
+				"notebook_uid"
+			],
+			[
+				"ex",
+				"execute"
+			],
+			[
+				"n",
+				"notebook_uids"
+			],
+			[
+				"get",
+				"getNotebook"
+			],
+			[
+				"con",
+				"config"
+			],
+			[
+				"sq",
+				"sqlite3"
+			],
+			[
+				"pic",
+				"pickle"
+			],
+			[
+				"js",
+				"jsonfile"
+			],
+			[
+				"json",
+				"jsonfilename"
+			],
+			[
+				"ipl",
+				"iplist1"
+			],
+			[
+				"test",
+				"testip"
+			],
+			[
+				"add",
+				"address"
+			],
+			[
+				"Error",
+				"Error_L3"
+			],
+			[
+				"per",
+				"percent_M"
+			],
+			[
+				"EA",
+				"EA_L3"
+			],
+			[
+				"perc",
+				"percent_M"
+			],
+			[
+				"com",
+				"compose_L"
+			],
+			[
+				"compose_",
+				"compose_H2O"
+			],
+			[
+				"p",
+				"percent_C"
+			],
+			[
+				"co",
+				"compose_CH3OH"
+			],
+			[
+				"fl",
+				"filepath"
+			],
+			[
+				"cl",
+				"close"
+			],
+			[
+				"out",
+				"outputfile"
+			],
+			[
+				"html",
+				"html_compress"
+			],
+			[
+				"ht",
+				"html_compress"
+			],
+			[
+				"file",
+				"filepath"
+			],
+			[
+				"c",
+				"ctime"
+			],
+			[
+				"te",
+				"templist_p"
+			],
+			[
+				"line",
+				"line_id"
+			],
+			[
+				"lin",
+				"line_id"
+			],
+			[
+				"u",
+				"utf-8"
+			],
+			[
+				"if",
+				"ifmain	if __name__ == '__main__'"
+			],
+			[
+				"top",
+				"topright"
+			],
+			[
+				"QT",
+				"QtGui"
+			],
+			[
+				"sp",
+				"splitter1"
+			],
+			[
+				"tran",
+				"trans_list"
+			],
+			[
+				"wave",
+				"waves_list"
+			],
+			[
+				"down",
+				"downfile_dir"
+			],
+			[
+				"do",
+				"downfile_dir"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "reference/index.rst",
+			"settings":
+			{
+				"buffer_size": 305,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 104.0,
+		"selected_items":
+		[
+			[
+				"mdpg",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"mdp",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			],
+			[
+				"mdpgpb",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 576.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"help",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Data/Dropbox/Dev/GitHub/exbReader/pack/pybuild.py",
+		"/C/Data/Dropbox/Dev/GitHub/exbReader/pack/config.json",
+		"/C/Data/Dropbox/Dev/GitHub/Pillow/docs/original-readme.rst",
+		"/C/Data/Dropbox/Dev/GitHub/exbReader/sql.py",
+		"/C/Data/Dropbox/Dev/GitHub/IPdata/readip.py",
+		"/C/Data/Dropbox/Dev/Chem/complex.py",
+		"/C/Data/Dropbox/Dev/blog/content/Readme.md",
+		"/C/Data/Dropbox/Dev/blog/pelicanconf.py",
+		"/C/Data/Dropbox/Dev/blog/theme/pelican-bootstrap3/static/css/style.css",
+		"/C/Data/Dropbox/Dev/blog/theme/pelican-bootstrap3/templates/includes/article_info.html",
+		"/C/Data/Dropbox/Dev/blog/theme/pelican-bootstrap3/templates/article.html",
+		"/C/Data/Dropbox/Dev/blog/fabfile.py",
+		"/C/Data/Dropbox/Dev/blog/theme/pelican-iliork-master/templates/index.html",
+		"/C/Data/Dropbox/Dev/blog/theme/pelican-iliork-master/templates/macro.html",
+		"/C/Data/Dropbox/Dev/blog/publishconf.py",
+		"/C/Data/Dropbox/Dev/blog/theme/pelican-bootstrap3/templates/includes/disqus_script.html",
+		"/C/Data/Dropbox/Dev/blog/content/2013-12-10-how-to-use-python-read-cpu-temp-windows.md",
+		"/C/Data/Dropbox/Dev/blog/content/pages/search.md",
+		"/C/Data/Dropbox/Dev/blog/content/2014-01-11-windows-dev-with-linux.md",
+		"/C/Data/Dropbox/Dev/blog/content/2014-01-13-jekyll-Redcarpet-toc.md",
+		"/C/Data/Dropbox/Dev/blog/theme/pelican-bootstrap3/templates/includes/footer.html",
+		"/C/Data/Dropbox/Dev/blog/pelican-plugins/gzip_cache/gzip_cache.py",
+		"/C/Data/Dropbox/Dev/Github/IPdata/czip.py",
+		"/C/Data/Dropbox/Dev/blog/test.py",
+		"/C/Data/Dropbox/Dev/blog/compression.py",
+		"/C/Data/Dropbox/Dev/blog/index.html",
+		"/C/Data/Dropbox/Dev/blog/publish.bat",
+		"/C/Data/Dropbox/Dev/blog/theme/pelican-bootstrap3/templates/index.html",
+		"/C/Data/Dropbox/Dev/blog/theme/pelican-bootstrap3/templates/includes/piwik.html",
+		"/C/Data/Dropbox/Dev/blog/theme/pelican-bootstrap3/templates/base.html",
+		"/C/Data/Dropbox/Dev/blog/theme/pelican-bootstrap3/templates/includes/comments.html",
+		"/C/Data/Dropbox/Dev/blog/complex.py",
+		"/C/Data/Dropbox/毕业设计/Python计算/molecular2.py",
+		"/C/Data/Dropbox/Dev/qqmht/qqmht.py",
+		"/C/Data/Dropbox/Dev/jwdhu/jwdhu.py",
+		"/C/Data/Dropbox/Dev/PyQT/Project1/test.py",
+		"/C/Data/Dropbox/Dev/PyQT/Project1/hello.py",
+		"/C/Data/Dropbox/Dev/phyng.github.io/CNAME",
+		"/C/Data/Dropbox/Dev/phyng.github.io/_includes/disqus.html",
+		"/C/Data/Dropbox/Dev/phyng.github.io/phyng.sublime-project",
+		"/C/Data/Dropbox/Dev/phyng.github.io/_includes/ga.html",
+		"/C/Data/Dropbox/Dev/phyng.github.io/_layouts/index.html",
+		"/C/Data/Dropbox/Dev/phyng.github.io/_layouts/post.html",
+		"/C/Data/Dropbox/Dev/phyng.github.io/stylesheets/style.css",
+		"/C/Data/Dropbox/Dev/phyng.github.io/_includes/head.html",
+		"/C/Data/Dropbox/Dev/phyng.github.io/javascripts/jquery.js",
+		"/C/Data/Dropbox/Dev/phyng.github.io/javascripts/pd.js",
+		"/C/Data/Dropbox/Dev/phyng.github.io/_config.yml",
+		"/C/Data/Dropbox/Dev/phyng.github.io/tv.html",
+		"/C/Data/Dropbox/Dev/phyng.github.io/google.html",
+		"/C/Data/Dropbox/Dev/phyng.github.io/navi.md",
+		"/C/Data/Dropbox/Dev/phyng.github.io/_site/feed.xml",
+		"/C/Data/Dropbox/Dev/phyng.github.io/robots.txt",
+		"/C/Data/Dropbox/Dev/phyng.github.io/_site/robots.txt",
+		"/C/Data/Dropbox/Dev/phyng.github.io/sitemap.xml",
+		"/C/Data/Dropbox/Dev/phyng.github.io/test.html",
+		"/C/Data/Dropbox/Dev/phyng.github.io/_includes/signoff.html",
+		"/C/Users/胡杨/Dropbox/Dev/phyng.github.io/tv.html",
+		"/C/Users/胡杨/Dropbox/Dev/phyng.github.io/_plugins/sitemap_generator.rb",
+		"/C/Users/胡杨/Dropbox/Dev/phyng.github.io/_posts/2014-01-11-start-ipython.md",
+		"/C/Users/胡杨/Dropbox/Dev/phyng.github.io/search.md",
+		"/C/Users/胡杨/Dropbox/Dev/phyng.github.io/_layouts/page.html",
+		"/C/Users/胡杨/Dropbox/Dev/phyng.github.io/_config.yml",
+		"/C/Users/胡杨/Dropbox/Dev/phyng.github.io/_plugins/fancytoc.rb",
+		"/C/Users/胡杨/Dropbox/Dev/phyng.github.io/_posts/2014-01-13-jekyll-Redcarpet-toc.md",
+		"/C/Users/胡杨/Dropbox/Dev/wxpython/text.py",
+		"/C/Users/胡杨/Dropbox/Dev/phyng.github.io/_layouts/index.html",
+		"/C/Users/胡杨/Dropbox/Dev/phyng.github.io/_posts/2014-01-11-windows-dev-with-linux.md",
+		"/C/Users/胡杨/Dropbox/Dev/phyng.github.io/_layouts/post.html",
+		"/C/Users/胡杨/Dropbox/Dev/phyng.github.io/_includes/head.html",
+		"/C/Users/胡杨/Dropbox/Dev/phyng.github.io/_includes/ga.html",
+		"/C/Users/胡杨/Dropbox/Dev/phyng.github.io/stylesheets/style.css",
+		"/C/Users/胡杨/Dropbox/Dev/phyng.github.io/feed.xml",
+		"/C/Users/胡杨/Dropbox/Dev/phyng.github.io/about.md",
+		"/C/Users/胡杨/Dropbox/Dev/phyng.github.io/_posts/2013-12-27-python-index.md",
+		"/C/Users/胡杨/Dropbox/Dev/phyng.github.io/_includes/signoff.html",
+		"/C/Users/胡杨/Downloads/subplot_demo.py",
+		"/C/Users/胡杨/Downloads/surface3d_demo.py",
+		"/C/Users/胡杨/Dropbox/Dev/phyng.github.io/CNAME",
+		"/C/Users/胡杨/Dropbox/Dev/phyng.github.io/_posts/2013-12-22-pyh-translate.md",
+		"/C/Users/胡杨/Dropbox/Dev/phyng.github.io/_posts/2013-12-22-block-ie.md",
+		"/C/Users/胡杨/Dropbox/Dev/phyng.github.io/_posts/2013-12-04-start-blog.md",
+		"/C/programs/Sublime/Data/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+		"/C/Dev/pywpm/app/chrome.app",
+		"/C/Dev/pywpm/README.md",
+		"/C/Dev/pywpm/test.py",
+		"/C/Dev/pywpm/app/qq.app",
+		"/C/programs/goagent/local/proxy.ini",
+		"/C/Dev/Python/fanfou/templates/download.html",
+		"/C/Dev/Python/fanfou/fanfou.sublime-project",
+		"/C/Users/胡杨/Dropbox/Python/phyng.github.io/_layouts/index.html",
+		"/C/Users/胡杨/Dropbox/Python/phyng.github.io/_includes/links.html",
+		"/C/Users/胡杨/Dropbox/Python/phyng.github.io/_includes/pages.html",
+		"/C/Users/胡杨/Dropbox/Python/phyng.github.io/_includes/share.html",
+		"/C/Users/胡杨/Dropbox/Python/phyng.github.io/_includes/signoff.html",
+		"/C/Users/胡杨/Dropbox/Python/phyng.github.io/_includes/disqus.html",
+		"/C/Users/胡杨/Dropbox/Python/phyng.github.io/_includes/footer.html",
+		"/C/Users/胡杨/Dropbox/Python/phyng.github.io/_posts/2013-12-10-how-to-use-python-read-cpu-temp-windows.md",
+		"/C/Users/胡杨/Dropbox/Python/phyng.github.io/_posts/2013-12-06-import-google-calendar.md",
+		"/C/Users/胡杨/Dropbox/Python/phyng.github.io/about.md",
+		"/C/Users/胡杨/Dropbox/Python/html/test.html",
+		"/C/Users/胡杨/Dropbox/Python/phyng.github.io/_posts/2013-12-04-start-blog.md",
+		"/C/Users/胡杨/Dropbox/Python/phyng.github.io/_config.yml",
+		"/C/Users/胡杨/Dropbox/Python/phyng.github.io/_includes/header.html",
+		"/C/Users/胡杨/Dropbox/Python/phyng.github.io/_layouts/post.html",
+		"/C/Users/胡杨/Dropbox/Python/phyng.github.io/_layouts/page.html",
+		"/C/Users/胡杨/Dropbox/Python/phyng.github.io/_includes/head.html",
+		"/C/Users/胡杨/Dropbox/Python/phyng.github.io/_includes/ga.html",
+		"/C/Users/胡杨/Dropbox/Python/phyng.github.io/_posts/2013-12-10-install-git-ruby-jekyll.md",
+		"/C/Users/胡杨/Dropbox/Python/cputemp/cpu2.py",
+		"/C/Users/胡杨/Dropbox/Python/cputemp/cputemp.py",
+		"/C/Users/胡杨/Dropbox/Python/cputemp/cpu.py",
+		"/C/Users/胡杨/Dropbox/Python/cputemp/py.reg",
+		"/C/programs/Sublime/Data/Packages/User/sftp_servers/sftp-config.json",
+		"/C/Users/胡杨/Dropbox/Python/fanfou/index.html",
+		"/C/users/胡杨/appdata/local/temp/sublime-sftp-browse-1386652712/sftp-config.json/home/jnhy/doubansite/doubansite/doubansite.py",
+		"/C/programs/Sublime/Data/Packages/SFTP/SFTP.sublime-settings",
+		"/C/Users/胡杨/Documents/python/test.py"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"注意",
+			")\n",
+			"pickle",
+			"fa-calendar",
+			"/javascripts/",
+			"/stylesheets/",
+			"ul",
+			"table",
+			"downlowd",
+			"Jnhy",
+			"26",
+			"2.6",
+			"hello",
+			">\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"cPickle",
+			"http://phyng.qiniudn.com/blog_",
+			"download",
+			"Phyng",
+			"27",
+			"2.7"
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "reference/index.rst",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 305,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5,
+								5
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/RestructuredText/reStructuredText.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 240.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 118.0
+	},
+	"project": "pillow_cn.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Dropbox\\Dev\\shop\\shop.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 313.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
