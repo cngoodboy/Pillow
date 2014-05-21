@@ -1,36 +1,32 @@
 快速入门
 ========
 
-Using the Image class
+.. note:: 译者注：专有名词尽量不翻译，比如bands, modes等请参考概念文档。
+
+使用 Image class
 ---------------------
 
-The most important class in the Python Imaging Library is the
-:py:class:`~PIL.Image.Image` class, defined in the module with the same name.
-You can create instances of this class in several ways; either by loading
-images from files, processing other images, or creating images from scratch.
+PIL最重要的class是
+:py:class:`~PIL.Image.Image` class, 你可以通过多种方法创建这个类的实例; 你可以从文件加载图像, 或者处理其他图像, 或者从 scratch 创建.
 
-To load an image from a file, use the :py:func:`~PIL.Image.open` function
-in the :py:mod:`~PIL.Image` module::
+要从文件加载图像, 使用 :py:func:`~PIL.Image.open` 函数，
+在 :py:mod:`~PIL.Image` 模块::
 
     >>> from PIL import Image
     >>> im = Image.open("lena.ppm")
 
-If successful, this function returns an :py:class:`~PIL.Image.Image` object.
-You can now use instance attributes to examine the file contents::
+加载成功将返回一个 :py:class:`~PIL.Image.Image` 对象。
+你现在可以使用示例属性检查文件内容::
 
     >>> from __future__ import print_function
     >>> print(im.format, im.size, im.mode)
     PPM (512, 512) RGB
 
-The :py:attr:`~PIL.Image.Image.format` attribute identifies the source of an
-image. If the image was not read from a file, it is set to None. The size
-attribute is a 2-tuple containing width and height (in pixels). The
-:py:attr:`~PIL.Image.Image.mode` attribute defines the number and names of the
-bands in the image, and also the pixel type and depth. Common modes are “L”
-(luminance) for greyscale images, “RGB” for true color images, and “CMYK” for
-pre-press images.
+:py:attr:`~PIL.Image.Image.format` 这个属性标识了图像来源。如果图像不是从文件读取它的值就是None。size属性是一个二元tuple，包含width和height（宽度和高度，单位都是px）。
+:py:attr:`~PIL.Image.Image.mode` 属性定义了图像bands的数量和名称，以及像素类型和深度。常见的modes 有 “L”
+(luminance) 表示灰度图像, “RGB” 表示真彩色图像, and “CMYK” 表示出版图像。
 
-If the file cannot be opened, an :py:exc:`IOError` exception is raised.
+如果文件打开错误，返回 :py:exc:`IOError` 错误。
 
 Once you have an instance of the :py:class:`~PIL.Image.Image` class, you can use
 the methods defined by this class to process and manipulate the image. For
@@ -48,7 +44,7 @@ example, let’s display the image we just loaded::
 
 The following sections provide an overview of the different functions provided in this library.
 
-Reading and writing images
+读写图像
 --------------------------
 
 The Python Imaging Library supports a wide variety of image file formats. To
@@ -62,7 +58,7 @@ To save a file, use the :py:meth:`~PIL.Image.Image.save` method of the
 important. Unless you specify the format, the library uses the filename
 extension to discover which file storage format to use.
 
-Convert files to JPEG
+转换文件格式到JPEG
 ^^^^^^^^^^^^^^^^^^^^^
 
 ::
@@ -84,7 +80,7 @@ A second argument can be supplied to the :py:meth:`~PIL.Image.Image.save`
 method which explicitly specifies a file format. If you use a non-standard
 extension, you must always specify the format this way:
 
-Create JPEG thumbnails
+创建 JPEG 缩略图
 ^^^^^^^^^^^^^^^^^^^^^^
 
 ::
@@ -115,7 +111,7 @@ This means that opening an image file is a fast operation, which is independent
 of the file size and compression type. Here’s a simple script to quickly
 identify a set of image files:
 
-Identify Image Files
+验证图像文件
 ^^^^^^^^^^^^^^^^^^^^
 
 ::
@@ -131,14 +127,14 @@ Identify Image Files
         except IOError:
             pass
 
-Cutting, pasting, and merging images
+剪切，粘贴，合并图像
 ------------------------------------
 
 The :py:class:`~PIL.Image.Image` class contains methods allowing you to
 manipulate regions within an image. To extract a sub-rectangle from an image,
 use the :py:meth:`~PIL.Image.Image.crop` method.
 
-Copying a subrectangle from an image
+从图像中复制出一个矩形
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
@@ -153,7 +149,7 @@ pixels, so the region in the above example is exactly 300x300 pixels.
 
 The region could now be processed in a certain manner and pasted back.
 
-Processing a subrectangle, and pasting it back
+处理复制的矩形并放回到原图
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
@@ -201,7 +197,7 @@ new images, each containing one band from the original multi-band image. The
 merge function takes a mode and a tuple of images, and combines them into a new
 image. The following sample swaps the three bands of an RGB image:
 
-Splitting and merging bands
+分离和合并通道
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
@@ -213,7 +209,7 @@ Note that for a single-band image, :py:meth:`~PIL.Image.Image.split` returns
 the image itself. To work with individual color bands, you may want to convert
 the image to “RGB” first.
 
-Geometrical transforms
+几何变换
 ----------------------
 
 The :py:class:`PIL.Image.Image` class contains methods to
@@ -221,7 +217,7 @@ The :py:class:`PIL.Image.Image` class contains methods to
 image. The former takes a tuple giving the new size, the latter the angle in
 degrees counter-clockwise.
 
-Simple geometry transforms
+简单的几何变换
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
@@ -234,7 +230,7 @@ To rotate the image in 90 degree steps, you can either use the
 :py:meth:`~PIL.Image.Image.transpose` method. The latter can also be used to
 flip an image around its horizontal or vertical axis.
 
-Transposing an image
+旋转图像
 ^^^^^^^^^^^^^^^^^^^^
 
 ::
@@ -253,13 +249,13 @@ A more general form of image transformations can be carried out via the
 
 .. _color-transforms:
 
-Color transforms
+颜色变换
 ----------------
 
 The Python Imaging Library allows you to convert images between different pixel
 representations using the :py:meth:`~PIL.Image.Image.convert` method.
 
-Converting between modes
+颜色模式转换
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
@@ -270,20 +266,20 @@ The library supports transformations between each supported mode and the “L”
 and “RGB” modes. To convert between other modes, you may have to use an
 intermediate image (typically an “RGB” image).
 
-Image enhancement
+颜色增强
 -----------------
 
 The Python Imaging Library provides a number of methods and modules that can be
 used to enhance images.
 
-Filters
+过滤器
 ^^^^^^^
 
 The :py:mod:`~PIL.ImageFilter` module contains a number of pre-defined
 enhancement filters that can be used with the
 :py:meth:`~PIL.Image.Image.filter` method.
 
-Applying filters
+应用过滤器
 ~~~~~~~~~~~~~~~~
 
 ::
@@ -291,7 +287,7 @@ Applying filters
     from PIL import ImageFilter
     out = im.filter(ImageFilter.DETAIL)
 
-Point Operations
+点操作
 ^^^^^^^^^^^^^^^^
 
 The :py:meth:`~PIL.Image.Image.point` method can be used to translate the pixel
@@ -299,7 +295,7 @@ values of an image (e.g. image contrast manipulation). In most cases, a
 function object expecting one argument can be passed to the this method. Each
 pixel is processed according to that function:
 
-Applying point transforms
+应用点操作
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
@@ -311,7 +307,7 @@ Using the above technique, you can quickly apply any simple expression to an
 image. You can also combine the :py:meth:`~PIL.Image.Image.point` and
 :py:meth:`~PIL.Image.Image.paste` methods to selectively modify an image:
 
-Processing individual bands
+处理个别bands
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
@@ -342,7 +338,7 @@ determine the outcome, and returns the last value examined as the result of the
 expression. So if the expression above is false (0), Python does not look at
 the second operand, and thus returns 0. Otherwise, it returns 255.
 
-Enhancement
+增强
 ^^^^^^^^^^^
 
 For more advanced image enhancement, you can use the classes in the
@@ -351,7 +347,7 @@ object can be used to quickly try out different settings.
 
 You can adjust contrast, brightness, color balance and sharpness in this way.
 
-Enhancing images
+增强图形
 ~~~~~~~~~~~~~~~~
 
 ::

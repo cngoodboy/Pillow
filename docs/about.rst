@@ -1,25 +1,25 @@
 关于 Pillow
 ============
 
-Goals
+愿景
 -----
 
-The fork authors' goal is to foster active development of PIL through:
+分支作者的愿景是活跃 PIL 的开发，通过以下途径：
 
-- Continuous integration testing via `Travis CI`_
-- Publicized development activity on `GitHub`_
-- Regular releases to the `Python Package Index`_
-- Solicitation for community contributions and involvement on `Image-SIG`_
+- 在 `Travis CI`_ 持续测试 
+- 在 `GitHub`_ 公开开发活动
+- 定期发布到 `Python Package Index`_
+- 在 `Image-SIG`_ 争取社区参与与贡献 
 
 .. _Travis CI: https://travis-ci.org/python-imaging/Pillow
 .. _GitHub: https://github.com/python-imaging/Pillow
 .. _Python Package Index: https://pypi.python.org/pypi/Pillow
 .. _Image-SIG: http://mail.python.org/mailman/listinfo/image-sig
 
-License
+许可证
 -------
 
-like PIL itself, Pillow is licensed under the MIT-like `PIL Software License <http://www.pythonware.com/products/pil/license.htm>`::
+和PIL一样, Pillow 使用 MIT-like `PIL Software License <http://www.pythonware.com/products/pil/license.htm>`::
 
     Software License
 
