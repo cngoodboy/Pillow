@@ -1,8 +1,11 @@
 Pillow
 ======
 
-Pillow is the 'friendly' PIL fork by Alex Clark and Contributors. PIL is the
-Python Imaging Library by Fredrik Lundh and Contributors.
+本文档是对Pillow官方文档的中文翻译。
+本文档由phyng( `Github <https://github.com/phyng>` )翻译。
+本文档翻译开始于2014-05-21.
+
+Pillow是一个对PIL友好的fork，作者是 Alex Clark 和 Contributors. 而PIL是一个Python图像处理库，作者是 Fredrik Lundh 和 Contributors.
 
 .. image:: https://travis-ci.org/python-imaging/Pillow.svg?branch=master
    :target: https://travis-ci.org/python-imaging/Pillow
@@ -20,48 +23,44 @@ Python Imaging Library by Fredrik Lundh and Contributors.
     :target: https://coveralls.io/r/python-imaging/Pillow?branch=master
     :alt: Test coverage
 
-To start using Pillow, please read the :doc:`installation
-instructions <installation>`.
+使用Pillow前先阅读 :doc:`安装说明 <installation>`.
 
-You can get the source and contribute at
-https://github.com/python-imaging/Pillow. You can download archives
-and old versions from `PyPI <https://pypi.python.org/pypi/Pillow>`_.
+你可以从Pillow的Github获取源码或者做出贡献
+https://github.com/python-imaging/Pillow. 你也可以从PyPi下载 `PyPI <https://pypi.python.org/pypi/Pillow>`_.
 
 .. toctree::
    :maxdepth: 2
 
-   installation
-   about
-   guides
+   安装
+   关于
+   指南
    reference/index.rst
    handbook/appendices
    original-readme
 
-Support Pillow!
+支持 Pillow!
 ===============
 
-PIL needs you! Please help us maintain the Python Imaging Library here:
+PIL 需要你! 请帮助我们维护:
 
 - `GitHub <https://github.com/python-imaging/Pillow>`_
 - `Freenode <irc://irc.freenode.net#pil>`_
 - `Image-SIG <http://mail.python.org/mailman/listinfo/image-sig>`_
 
-Financial
+经济支持
 ---------
 
-Pillow is a volunteer effort led by Alex Clark. If you can't help with
-development please consider helping us financially. Your assistance would
-be very much appreciated!
+Pillow是由Alex Clark领导的公益项目. 如果你不能支持开发，那么可以从经济上支持. 
 
-.. note:: Contributors please add your name and donation preference here.
+.. note:: 下面列表是开发者和捐助链接
 
 ======================================= =======================================
-**Developer**                           **Preference**
+**开发者**                              **捐助链接**
 ======================================= =======================================
 Alex Clark (fork author)                http://gittip.com/aclark4life
 ======================================= =======================================
 
-Indices and tables
+特殊页面
 ==================
 
 * :ref:`genindex`
