@@ -1,4 +1,4 @@
-Concepts
+概念
 ========
 
 The Python Imaging Library handles *raster images*; that is, rectangles of
@@ -14,7 +14,7 @@ same dimensions and depth.
 To get the number and names of bands in an image, use the
 :py:meth:`~PIL.Image.Image.getbands` method.
 
-Mode
+Mode（模式）
 ----
 
 The :term:`mode` of an image defines the type and depth of a pixel in the
@@ -39,7 +39,7 @@ objects.
 You can read the mode of an image through the :py:attr:`~PIL.Image.Image.mode`
 attribute. This is a string containing one of the above values.
 
-Size
+Size（大小）
 ----
 
 You can read the image size through the :py:attr:`~PIL.Image.Image.size`
@@ -75,7 +75,7 @@ the file format handler (see the chapter on :ref:`image-file-formats`). Most
 handlers add properties to the :py:attr:`~PIL.Image.Image.info` attribute when
 loading an image, but ignore it when saving images.
 
-Filters
+Filters（过滤器）
 -------
 
 For geometry operations that may map multiple input pixels to a single output

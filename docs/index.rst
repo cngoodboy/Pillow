@@ -33,9 +33,9 @@ https://github.com/python-imaging/Pillow. 你也可以从 `PyPI <https://pypi.py
 .. toctree::
    :maxdepth: 2
 
-   安装
-   关于
-   指南
+   installation
+   about
+   guides
    reference/index.rst
    handbook/appendices
    original-readme

@@ -1,4 +1,4 @@
-About Pillow
+关于 Pillow
 ============
 
 Goals
@@ -34,7 +34,7 @@ like PIL itself, Pillow is licensed under the MIT-like `PIL Software License <ht
 
     SECRET LABS AB AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL SECRET LABS AB OR THE AUTHOR BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-Why a fork?
+为什么fork？
 -----------
 
 PIL is not setuptools compatible. Please see `this Image-SIG post`_ for a more
@@ -44,7 +44,7 @@ issues reported.
 
 .. _this Image-SIG post: https://mail.python.org/pipermail/image-sig/2010-August/006480.html
 
-What about PIL?
+关于PIL
 ---------------
 
 .. note::

@@ -1,4 +1,4 @@
-Guides
+指南
 ======
 
 .. toctree::

@@ -1,4 +1,4 @@
-Writing your own file decoder
+编写自己的文件解码器
 =============================
 
 The Python Imaging Library uses a plug-in model which allows you to

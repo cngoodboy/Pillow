@@ -8,14 +8,14 @@
 .. warning:: PIL 和 Pillow 现在不能共存。
     如果你想使用 Pillow, 请首先移除 PIL 。
 
-.. 注意:: Pillow >= 2.0.0 支持 Python 版本 2.6, 2.7, 3.2, 3.3, 3.4
+.. note:: Pillow >= 2.0.0 支持 Python 版本 2.6, 2.7, 3.2, 3.3, 3.4
 
-.. 注意:: Pillow < 2.0.0 支持 Python 版本 2.4, 2.5, 2.6, 2.7.
+.. note:: Pillow < 2.0.0 支持 Python 版本 2.4, 2.5, 2.6, 2.7.
 
 简单安装
 -------------------
 
-.. 注意::
+.. note::
 
     下面的指南将会安装支持大多数格式的 Pillow。
     查看 :ref:`external-libraries` 了解安装外部库的信息。这个页面包含了特定平台的安装。
@@ -80,11 +80,11 @@ not support them)::
 Linux 下安装
 ------------------
 
-.. 注意::
+.. note::
 
     Fedora, Debian/Ubuntu, and ArchLinux 已经包含了 Pillow。
 
-.. 注意::
+.. note::
 
     你 *不需要* 安装所有的外部库如果你只想让 Pillow 基本能运行。
 
@@ -121,7 +121,7 @@ Linux 下安装
 Mac OS X 下安装
 ---------------------
 
-.. 注意::
+.. note::
 
     你 *不需要* 安装所有的外部库如果你只想让 Pillow 基本能运行。
 
@@ -145,7 +145,7 @@ Windows 下安装
 Python Eggs
 ^^^^^^^^^^^
 
-.. 注意::
+.. note::
 
     :command:`pip` 不支持 Python Eggs; 请使用 :command:`easy_install`
     代替。
@@ -157,7 +157,7 @@ Python Eggs
 Python Wheels
 ^^^^^^^^^^^^^
 
-.. 注意:: 实验性. 需要 setuptools >=0.8 以及 pip >=1.4.1
+.. note:: 实验性. 需要 setuptools >=0.8 以及 pip >=1.4.1
 
 ::
 
@@ -180,7 +180,7 @@ each release on a volunteer basis, but the source should compile and run
 everywhere platform support is listed. In general, we aim to support all
 current versions of Linux, OS X, and Windows.
 
-.. 注意::
+.. note::
 
     Contributors please test on your platform, edit this document, and send a
     pull request.

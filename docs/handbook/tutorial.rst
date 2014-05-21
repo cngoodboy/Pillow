@@ -1,4 +1,4 @@
-Tutorial
+快速入门
 ========
 
 Using the Image class

@@ -1,6 +1,6 @@
 .. _image-file-formats:
 
-Image file formats
+图片文件格式
 ==================
 
 The Python Imaging Library supports a wide variety of raster file formats.

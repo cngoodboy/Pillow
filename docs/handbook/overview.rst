@@ -1,4 +1,4 @@
-Overview
+全局概览
 ========
 
 The **Python Imaging Library** adds image processing capabilities to your
