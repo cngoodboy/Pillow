@@ -1,39 +1,36 @@
-Installation
+安装
 ============
 
-.. warning:: Pillow >= 2.1.0 no longer supports "import _imaging". Please use "from PIL.Image import core as _imaging" instead.
+.. warning:: Pillow >= 2.1.0 不支持 "import _imaging"。请使用 "from PIL.Image import core as _imaging" 代替。
 
-.. warning:: Pillow >= 1.0 no longer supports "import Image". Please use "from PIL import Image" instead.
+.. warning:: Pillow >= 1.0 不支持 "import Image". 请使用 "from PIL import Image" 代替。
 
-.. warning:: PIL and Pillow currently cannot co-exist in the same environment.
-    If you want to use Pillow, please remove PIL first.
+.. warning:: PIL 和 Pillow 现在不能共存。
+    如果你想使用 Pillow, 请首先移除 PIL 。
 
-.. note:: Pillow >= 2.0.0 supports Python versions 2.6, 2.7, 3.2, 3.3, 3.4
+.. 注意:: Pillow >= 2.0.0 支持 Python 版本 2.6, 2.7, 3.2, 3.3, 3.4
 
-.. note:: Pillow < 2.0.0 supports Python versions 2.4, 2.5, 2.6, 2.7.
+.. 注意:: Pillow < 2.0.0 支持 Python 版本 2.4, 2.5, 2.6, 2.7.
 
-Simple installation
+简单安装
 -------------------
 
-.. note::
+.. 注意::
 
-    The following instructions will install Pillow with support for most formats.
-    See :ref:`external-libraries` for the features you would gain by installing
-    the external libraries first. This page probably also include specific
-    instructions for your platform.
+    下面的指南将会安装支持大多数格式的 Pillow。
+    查看 :ref:`external-libraries` 了解安装外部库的信息。这个页面包含了特定平台的安装。
 
-You can install Pillow with :command:`pip`::
+你可以使用 :command:`pip`: 命令安装Pillow：
 
     $ pip install Pillow
 
-Or :command:`easy_install` (for installing `Python Eggs
+或者 :command:`easy_install` (for installing `Python Eggs
 <http://peak.telecommunity.com/DevCenter/PythonEggs>`_, as :command:`pip` does
 not support them)::
 
     $ easy_install Pillow
 
-Or download the `compressed archive from PyPI`_, extract it, and inside it
-run::
+或者从 PyPI 下载 `compressed archive from PyPI`_, 解压，进入目录运行::
 
     $ python setup.py install
 
@@ -41,10 +38,10 @@ run::
 
 .. _external-libraries:
 
-External libraries
+外部库
 ------------------
 
-Many of Pillow's features require external libraries:
+许多 Pillow 的功能需要外部库的支持:
 
 * **libjpeg** provides JPEG functionality.
 
@@ -75,94 +72,83 @@ Many of Pillow's features require external libraries:
 
   * Pillow has been tested with openjpeg **2.0.0**.
 
-If the prerequisites are installed in the standard library locations for your
-machine (e.g. :file:`/usr` or :file:`/usr/local`), no additional configuration
-should be required. If they are installed in a non-standard location, you may
-need to configure setuptools to use those locations (i.e. by editing
-:file:`setup.py` and/or :file:`setup.cfg`). Once you have installed the
-prerequisites, run::
+如果机器上已经使用标准方法安装了这些库 (e.g. :file:`/usr` or :file:`/usr/local`), 那么不需要进行多余的配置了。如果它们安装在非标准目录, 你可能需要配置 setuptools 以使用这些目录。 (i.e. by editing
+:file:`setup.py` and/or :file:`setup.cfg`). 当你安装好依赖包之后, r运行::
 
     $ pip install Pillow
 
-Linux installation
+Linux 下安装
 ------------------
 
-.. note::
+.. 注意::
 
-    Fedora, Debian/Ubuntu, and ArchLinux include Pillow (instead of PIL) with
-    their distributions. Consider using those instead of installing manually.
+    Fedora, Debian/Ubuntu, and ArchLinux 已经包含了 Pillow。
 
-.. note::
+.. 注意::
 
-    You *do not* need to install all of the external libraries to get Pillow's
-    basics to work.
+    你 *不需要* 安装所有的外部库如果你只想让 Pillow 基本能运行。
 
-**We do not provide binaries for Linux.** If you didn't build Python from
-source, make sure you have Python's development libraries installed. In Debian
-or Ubuntu::
+**我们不为 Linux 提供二进制文件** 如果你不是从源码构建的 Python , 那么先确定你安装了 Python 开发环境，在 Debian
+或 Ubuntu::
 
     $ sudo apt-get install python-dev python-setuptools
 
-Or for Python 3::
+或者使用 Python 3::
 
     $ sudo apt-get install python3-dev python3-setuptools
 
-In Fedora, the command is::
+在Fedora, 命令是::
     
     $ sudo yum install python-devel
 
-Prerequisites are installed on **Ubuntu 10.04 LTS** with::
+在 **Ubuntu 10.04 LTS** 安装依赖包::
 
     $ sudo apt-get install libtiff4-dev libjpeg62-dev zlib1g-dev \
         libfreetype6-dev tcl8.5-dev tk8.5-dev python-tk
 
-Prerequisites are installed with on **Ubuntu 12.04 LTS** or **Raspian Wheezy
-7.0** with::
+在 **Ubuntu 12.04 LTS** or **Raspian Wheezy
+7.0** 安装依赖包::
 
     $ sudo apt-get install libtiff4-dev libjpeg8-dev zlib1g-dev \
         libfreetype6-dev liblcms2-dev libwebp-dev tcl8.5-dev tk8.5-dev python-tk
 
-Prerequisites are installed on **Fedora 20** with::
+在 **Fedora 20** 安装依赖包::
 
     $ sudo yum install libtiff-devel libjpeg-devel libzip-devel freetype-devel \
         lcms2-devel libwebp-devel tcl-devel tk-devel
 
 
-Mac OS X installation
+Mac OS X 下安装
 ---------------------
 
-.. note::
+.. 注意::
 
-    You *do not* need to install all of the external libraries to get Pillow's
-    basics to work.
+    你 *不需要* 安装所有的外部库如果你只想让 Pillow 基本能运行。
 
-**We do not provide binaries for OS X**, so you'll need XCode to install
-Pillow. (XCode 4.2 on 10.6 will work with the Official Python binary
-distribution. Otherwise, use whatever XCode you used to compile Python.)
+**我们不为 OS X 提供二进制文件**, 所以你需要先安装 Xcode 才能安装 Pillow 。 (XCode 4.2 on 10.6 可以和官方 Python 二进制版本使用。或者使用任意版本 XCode 自己编译 Python.)
 
-The easiest way to install the prerequisites is via `Homebrew
-<http://mxcl.github.com/homebrew/>`_. After you install Homebrew, run::
+安装依赖包最简单的方法是使用 `Homebrew
+<http://mxcl.github.com/homebrew/>`_. 安装 Homebrew 之后, 运行::
 
     $ brew install libtiff libjpeg webp little-cms2
 
-If you've built your own Python, then you should be able to install Pillow
-using::
+如果你已经构建了Python，可以运行::
 
     $ pip install Pillow
 
-Windows installation
+Windows 下安装
 --------------------
 
-We provide binaries for Windows in the form of Python Eggs and `Python Wheels
+我们在 PyPI 提供 Windows 二进制文件，使用 `Python Wheels
 <http://wheel.readthedocs.org/en/latest/index.html>`_:
 
 Python Eggs
 ^^^^^^^^^^^
 
-.. note::
+.. 注意::
 
-    :command:`pip` does not support Python Eggs; use :command:`easy_install`
-    instead.
+    :command:`pip` 不支持 Python Eggs; 请使用 :command:`easy_install`
+    代替。
 
 ::
 
@@ -171,7 +157,7 @@ Python Eggs
 Python Wheels
 ^^^^^^^^^^^^^
 
-.. Note:: Experimental. Requires setuptools >=0.8 and pip >=1.4.1
+.. 注意:: 实验性. 需要 setuptools >=0.8 以及 pip >=1.4.1
 
 ::
 
@@ -186,7 +172,7 @@ to a specific version:
     $ pip install --use-wheel Pillow==2.3.0
 
 
-Platform support
+平台支持
 ----------------
 
 Current platform support for Pillow. Binary distributions are contributed for
@@ -194,7 +180,7 @@ each release on a volunteer basis, but the source should compile and run
 everywhere platform support is listed. In general, we aim to support all
 current versions of Linux, OS X, and Windows.
 
-.. note::
+.. 注意::
 
     Contributors please test on your platform, edit this document, and send a
     pull request.
