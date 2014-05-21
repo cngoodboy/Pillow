@@ -1,4 +1,4 @@
-Original PIL README
+PIL 原始帮助文档
 ===================
 
 What follows is the original PIL 1.1.7 README file contents.

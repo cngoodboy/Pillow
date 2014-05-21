@@ -57,17 +57,17 @@ Pillow 的许多功能需要外部库的支持:
 
 * **littlecms** provides color management
 
-  * Pillow  2.2.1 以及更低版本使用 liblcms1, Pillow 2.3.0 以及更高版本使用 liblcms2. 在这些版本测试通过： **1.19** and **2.2**.
+  * Pillow  2.2.1 以及更低版本使用 liblcms1, Pillow 2.3.0 以及更高版本使用 liblcms2. 在这些版本测试通过： **1.19** and **2.2**
 
 * **libwebp** 提供 webp 相关功能
 
-  * Pillow已经在这些版本测试过： version **0.1.3**不能读取透明webp图像， Versions **0.3.0** and **0.4.0** 支持透明。
+  * Pillow已经在这些版本测试过： version **0.1.3** 不能读取透明webp图像， Versions **0.3.0** and **0.4.0** 支持透明。
 
 * **tcl/tk** 提供 tkinter bitmap and photo images 的支持
 
 * **openjpeg** 提供 JPEG 2000 功能 
 
-  * Pillow 在这些版本测试通过： **2.0.0**.
+  * Pillow 在这些版本测试通过： **2.0.0**
 
 如果机器上已经使用标准方法在标准目录安装了这些库 (e.g. :file:`/usr` or :file:`/usr/local`), 那么不需要进行多余的配置了。如果它们安装在非标准目录，你可能需要配置 setuptools 以使用这些目录。 (i.e. by editing
 :file:`setup.py` and/or :file:`setup.cfg`). 当你安装好依赖包之后, 运行::

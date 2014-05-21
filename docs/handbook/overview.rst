@@ -1,46 +1,34 @@
 全局概览
 ========
 
-The **Python Imaging Library** adds image processing capabilities to your
-Python interpreter.
+**Python Imaging Library** ( PIL ) 给 Python 增加了图像处理能力。
 
-This library provides extensive file format support, an efficient internal
-representation, and fairly powerful image processing capabilities.
+这个库提供了广泛的文件格式支持，高效的内部展现，以及十分强大的图像处理能力。
 
-The core image library is designed for fast access to data stored in a few
-basic pixel formats. It should provide a solid foundation for a general image
-processing tool.
-
-Let’s look at a few possible uses of this library.
+让我们看看这个库的几种可能用法：
 
 图像存储
 --------------
 
-The Python Imaging Library is ideal for for image archival and batch processing
-applications. You can use the library to create thumbnails, convert between
-file formats, print images, etc.
+PIL 设计用于图像归档和图像批量处理，你可以使用它建立缩略图，转换格式，打印图片等等。
 
-The current version identifies and reads a large number of formats. Write
-support is intentionally restricted to the most commonly used interchange and
-presentation formats.
+现在的版本可以验证和读取大量的图片格式。写入有意设计为只能写入常用的文件格式。
 
 图像显示
 -------------
 
-The current release includes Tk :py:class:`~PIL.ImageTk.PhotoImage` and
-:py:class:`~PIL.ImageTk.BitmapImage` interfaces, as well as a :py:mod:`Windows
-DIB interface <PIL.ImageWin>` that can be used with PythonWin and other
-Windows-based toolkits. Many other GUI toolkits come with some kind of PIL
-support.
 
-For debugging, there’s also a :py:meth:`show` method which saves an image to
-disk, and calls an external display utility.
+现在的版本包含了 Tk :py:class:`~PIL.ImageTk.PhotoImage` 和
+:py:class:`~PIL.ImageTk.BitmapImage` 接口, 以及 :py:mod:`Windows
+DIB interface <PIL.ImageWin>` ，这有助于在 Windows 下使用。
+
+为了方便测试，还提供了 :py:meth:`show` 方法，可以保存图像到磁盘并显示。 
 
 图像处理
 ----------------
 
-The library contains basic image processing functionality, including point operations, filtering with a set of built-in convolution kernels, and colour space conversions.
+这个库包含了基本的图像处理功能，包括点操作，使用内置卷积内核过滤，色彩空间转换。
 
-The library also supports image resizing, rotation and arbitrary affine transforms.
+这个库还支持更改图像大小、旋转、自由变换。
 
-There’s a histogram method allowing you to pull some statistics out of an image. This can be used for automatic contrast enhancement, and for global statistical analysis.
+有一个直方图方法允许你统计图像，这可以用于对比度增强和全局统计分析。

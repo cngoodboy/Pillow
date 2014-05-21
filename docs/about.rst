@@ -19,7 +19,7 @@
 许可证
 -------
 
-和PIL一样, Pillow 使用 MIT-like `PIL Software License <http://www.pythonware.com/products/pil/license.htm>`_ ::
+和PIL一样，Pillow 使用 MIT-like `PIL Software License <http://www.pythonware.com/products/pil/license.htm>`_ ::
 
     Software License
 
@@ -34,10 +34,10 @@
 
     SECRET LABS AB AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL SECRET LABS AB OR THE AUTHOR BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-为什么派生分支？
+为什么派生分支
 -----------
 
-PIL 不兼容setuptools。请阅读 `this Image-SIG post`_ 获取更多解释。而且 PIL 计划一年更新两次太慢了不能解决大量issues报告。
+PIL 不兼容setuptools，请阅读 `this Image-SIG post`_ 获取更多解释。而且 PIL 计划一年更新两次太慢了不能解决大量issues报告。
 
 .. _this Image-SIG post: https://mail.python.org/pipermail/image-sig/2010-August/006480.html
 
@@ -49,8 +49,8 @@ PIL 不兼容setuptools。请阅读 `this Image-SIG post`_ 获取更多解释。
     Pillow 2.0.0 之前，Pillow相对于 PIL 更改很少。Pillow 2.0.0
     开始增加 Python 3 的支持进行了很多 Bug 修正。
 
-距离上次 PIL 发布更新的时间越久，PIL 更新的可能性越小。然而，PIL官方还没有正式宣布PIL死亡，如果你还想支持 PIL 可以先报告给 PIL ：
-`report issues here first`_, 然后报告给 Pillow 
+距离上次 PIL 发布更新的时间越久，PIL 更新的可能性越小。然而，PIL官方还没有正式宣布PIL死亡，如果你还想支持 PIL 可以先报告给 PIL：
+`report issues here first`_, 然后报告给 Pillow：
 `open the corresponding Pillow tickets here`_.
 
 .. _report issues here first: https://bitbucket.org/effbot/pil-2009-raclette/issues

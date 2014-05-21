@@ -1,9 +1,9 @@
-Pillow中文文档
+Pillow 中文文档
 ======
 
 .. note:: 本文档是对 Pillow 官方文档的中文翻译，译者：phyng(`Github <https://github.com/phyng>`_)，开始于2014-05-21。
 
-.. warning:: 受限于译者英文水平以及技术水平，译文难免有很多别扭甚至错误的地方，只能作为大致参考，请尽量RTFEM（Read The Fucking English Manual）。
+.. warning:: 受限于译者英文水平以及技术水平，译文难免有很多别扭甚至错误的地方，只能作为大致参考，请尽量 RTFEM（Read The Fucking English Manual）。
 
 Pillow 是一个对 PIL 友好的分支，作者是 Alex Clark 和 Contributors。而 PIL 是一个 Python 图像处理库，作者是 Fredrik Lundh 和 Contributors.
 
@@ -23,7 +23,7 @@ Pillow 是一个对 PIL 友好的分支，作者是 Alex Clark 和 Contributors�
     :target: https://coveralls.io/r/python-imaging/Pillow?branch=master
     :alt: Test coverage
 
-.. note:: 上面一排图片无法完整显示四个的话考虑下FGFW。
+.. note:: 上面一排图片无法完整显示四个的话考虑下 FGFW。
 
 使用 Pillow 前先阅读 :doc:`安装说明 <installation>`.
 

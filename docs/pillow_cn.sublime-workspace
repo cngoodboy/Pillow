@@ -204,10 +204,18 @@
 	"buffers":
 	[
 		{
-			"file": "reference/index.rst",
+			"file": "handbook/tutorial.rst",
 			"settings":
 			{
-				"buffer_size": 305,
+				"buffer_size": 13483,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "handbook/overview.rst",
+			"settings":
+			{
+				"buffer_size": 589,
 				"line_ending": "Windows"
 			}
 		}
@@ -269,9 +277,16 @@
 	},
 	"file_history":
 	[
+		"/C/Data/Dropbox/Dev/GitHub/Pillow/docs/handbook/overview.rst",
+		"/C/Data/Dropbox/Dev/GitHub/Pillow/docs/index.rst",
+		"/C/Data/Dropbox/Dev/GitHub/Pillow/docs/original-readme.rst",
+		"/C/Data/Dropbox/Dev/GitHub/Pillow/docs/installation.rst",
+		"/C/Data/Dropbox/Dev/GitHub/Pillow/docs/about.rst",
+		"/C/Data/Dropbox/Dev/GitHub/Pillow/docs/porting-pil-to-pillow.rst",
+		"/C/Data/Dropbox/Dev/GitHub/Pillow/docs/reference/index.rst",
+		"/C/Data/Dropbox/Dev/GitHub/Pillow/docs/_templates/sidebarhelp.html",
 		"/C/Data/Dropbox/Dev/GitHub/exbReader/pack/pybuild.py",
 		"/C/Data/Dropbox/Dev/GitHub/exbReader/pack/config.json",
-		"/C/Data/Dropbox/Dev/GitHub/Pillow/docs/original-readme.rst",
 		"/C/Data/Dropbox/Dev/GitHub/exbReader/sql.py",
 		"/C/Data/Dropbox/Dev/GitHub/IPdata/readip.py",
 		"/C/Data/Dropbox/Dev/Chem/complex.py",
@@ -446,19 +461,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "reference/index.rst",
+					"file": "handbook/tutorial.rst",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 305,
+						"buffer_size": 13483,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5,
-								5
+								3449,
+								3449
 							]
 						],
 						"settings":
@@ -467,14 +482,45 @@
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/RestructuredText/reStructuredText.tmLanguage",
-							"tab_size": 3,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 4325.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "handbook/overview.rst",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 589,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/RestructuredText/reStructuredText.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 660.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]

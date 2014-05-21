@@ -1,15 +1,15 @@
 快速入门
 ========
 
-.. note:: 译者注：编程名词和专业名词尽量不翻译，比如bands, modes等请参考 :doc:`概念 <handbook/concepts>` 。
+.. note:: 译者注：编程名词和专业名词尽量不翻译，比如bands, modes等请参考 :doc:`概念 <http://pillow-cn.readthedocs.org/zh_CN/latest/handbook/concepts.html>` 。
 
 使用 Image class
 ---------------------
 
-PIL最重要的class是
-:py:class:`~PIL.Image.Image` class, 你可以通过多种方法创建这个类的实例; 你可以从文件加载图像, 或者处理其他图像, 或者从 scratch 创建.
+PIL最重要的类是
+:py:class:`~PIL.Image.Image` class, 你可以通过多种方法创建这个类的实例；你可以从文件加载图像，或者处理其他图像, 或者从 scratch 创建。
 
-要从文件加载图像, 使用 :py:func:`~PIL.Image.open` 函数，
+要从文件加载图像，使用 :py:func:`~PIL.Image.open` 函数，
 在 :py:mod:`~PIL.Image` 模块::
 
     >>> from PIL import Image
@@ -28,35 +28,26 @@ PIL最重要的class是
 
 如果文件打开错误，返回 :py:exc:`IOError` 错误。
 
-Once you have an instance of the :py:class:`~PIL.Image.Image` class, you can use
-the methods defined by this class to process and manipulate the image. For
-example, let’s display the image we just loaded::
+只要你有了 :py:class:`~PIL.Image.Image` 类的实例，你就可以通过类的方法处理图像。比如，下列方法可以显示图像::
 
     >>> im.show()
 
 .. note::
 
-    The standard version of :py:meth:`~PIL.Image.Image.show` is not very
-    efficient, since it saves the image to a temporary file and calls the
-    :command:`xv` utility to display the image. If you don’t have :command:`xv`
-    installed, it won’t even work. When it does work though, it is very handy
-    for debugging and tests.
+    标准的 :py:meth:`~PIL.Image.Image.show` 效率并不高，它需要保存图像到临时文件然后通过
+    :command:`xv` 显示图像。你需要先安装 :command:`xv` ，显示图像有助于调试和测试。
 
-The following sections provide an overview of the different functions provided in this library.
+下面的部分提供了这个库其他函数的概览。
 
 读写图像
 --------------------------
 
-The Python Imaging Library supports a wide variety of image file formats. To
-read files from disk, use the :py:func:`~PIL.Image.open` function in the
-:py:mod:`~PIL.Image` module. You don’t have to know the file format to open a
-file. The library automatically determines the format based on the contents of
-the file.
+PIL 模块支持大量图片格式。使用在
+:py:mod:`~PIL.Image` 模块的 :py:func:`~PIL.Image.open` 函数从磁盘读取文件。你不需要知道文件格式就能打开它，这个库能够根据文件内容自动确定文件格式。
 
-To save a file, use the :py:meth:`~PIL.Image.Image.save` method of the
-:py:class:`~PIL.Image.Image` class. When saving files, the name becomes
-important. Unless you specify the format, the library uses the filename
-extension to discover which file storage format to use.
+要保存文件，使用
+:py:class:`~PIL.Image.Image` 类的 :py:meth:`~PIL.Image.Image.save` 方法。保存文件的时候文件名变得重要了。除非你指定格式，否则这个库将会以文件名的扩展名作为格式保存。
+
 
 转换文件格式到JPEG
 ^^^^^^^^^^^^^^^^^^^^^
@@ -76,9 +67,7 @@ extension to discover which file storage format to use.
             except IOError:
                 print("cannot convert", infile)
 
-A second argument can be supplied to the :py:meth:`~PIL.Image.Image.save`
-method which explicitly specifies a file format. If you use a non-standard
-extension, you must always specify the format this way:
+:py:meth:`~PIL.Image.Image.save` 方法的第二个参数可以指定文件格式，如果你使用非标准的扩展名你必须这样做：
 
 创建 JPEG 缩略图
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -101,15 +90,8 @@ extension, you must always specify the format this way:
             except IOError:
                 print("cannot create thumbnail for", infile)
 
-It is important to note that the library doesn’t decode or load the raster data
-unless it really has to. When you open a file, the file header is read to
-determine the file format and extract things like mode, size, and other
-properties required to decode the file, but the rest of the file is not
-processed until later.
+很重要的一点是这个库不会直接解码或者加载图像栅格数据。当你打开一个文件，只会读取文件头信息用来确定格式，颜色模式，大小等等，文件的剩余部分不会主动处理。这意味着打开一个图像文件的操作十分快速，跟图片大小和压缩方式无关。下面是一个简单的脚本用来快速验证大量图片。
 
-This means that opening an image file is a fast operation, which is independent
-of the file size and compression type. Here’s a simple script to quickly
-identify a set of image files:
 
 验证图像文件
 ^^^^^^^^^^^^^^^^^^^^
@@ -130,11 +112,9 @@ identify a set of image files:
 剪切，粘贴，合并图像
 ------------------------------------
 
-The :py:class:`~PIL.Image.Image` class contains methods allowing you to
-manipulate regions within an image. To extract a sub-rectangle from an image,
-use the :py:meth:`~PIL.Image.Image.crop` method.
+:py:class:`~PIL.Image.Image` 类包含的方法允许你操作图像部分选区。使用:py:meth:`~PIL.Image.Image.crop` 方法获取图像的一个子矩形选区。
 
-从图像中复制出一个矩形
+从图像中复制出一个矩形选区
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
@@ -142,14 +122,9 @@ use the :py:meth:`~PIL.Image.Image.crop` method.
     box = (100, 100, 400, 400)
     region = im.crop(box)
 
-The region is defined by a 4-tuple, where coordinates are (left, upper, right,
-lower). The Python Imaging Library uses a coordinate system with (0, 0) in the
-upper left corner. Also note that coordinates refer to positions between the
-pixels, so the region in the above example is exactly 300x300 pixels.
+矩形选区有一个4元元组定义，分别表示左、上、右、下的坐标。这个库以左上角为坐标原点，单位是px，所以上诉代码复制了一个 300x300 pixels 的矩形选区。这个选区现在可以被处理并且粘贴到原图。
 
-The region could now be processed in a certain manner and pasted back.
-
-处理复制的矩形并放回到原图
+处理复制的矩形选区并粘贴到原图
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
@@ -157,13 +132,7 @@ The region could now be processed in a certain manner and pasted back.
     region = region.transpose(Image.ROTATE_180)
     im.paste(region, box)
 
-When pasting regions back, the size of the region must match the given region
-exactly. In addition, the region cannot extend outside the image. However, the
-modes of the original image and the region do not need to match. If they don’t,
-the region is automatically converted before being pasted (see the section on
-:ref:`color-transforms` below for details).
-
-Here’s an additional example:
+当你粘贴矩形选区的时候必须保证尺寸一致。此外，矩形选区不能在图像外。然而你不必保证矩形选区和原图的颜色模式一致，因为矩形选区会被自动转换颜色（参看下面的 :ref:`color-transforms`  部分），下面是一个例子：
 
 Rolling an image
 ^^^^^^^^^^^^^^^^
