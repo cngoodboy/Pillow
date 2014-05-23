@@ -3,7 +3,7 @@
 
 .. note:: 译者注：编程名词和专业名词尽量不翻译，比如bands, modes等请参考 :doc:`概念 <http://pillow-cn.readthedocs.org/zh_CN/latest/handbook/concepts.html>` 。
 
-使用 Image class
+使用 Image 类
 ---------------------
 
 PIL最重要的类是
@@ -166,7 +166,7 @@ new images, each containing one band from the original multi-band image. The
 merge function takes a mode and a tuple of images, and combines them into a new
 image. The following sample swaps the three bands of an RGB image:
 
-分离和合并通道
+分离和合并颜色通道
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
