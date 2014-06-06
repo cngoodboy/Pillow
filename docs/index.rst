@@ -7,7 +7,7 @@ Pillow 中文文档
 
 Pillow 是一个对 PIL 友好的分支，作者是 Alex Clark 和贡献者。而 PIL 是一个 Python 图像处理库，作者是 Fredrik Lundh 和贡献者.
 
-.. image:: https://travis-ci.org/python-imaging/Pillow.svg?branch=master
+.. image:: https://api.travis-ci.org/python-pillow/Pillow.svg?branch=master
    :target: https://travis-ci.org/python-imaging/Pillow
    :alt: Travis CI build status
 
