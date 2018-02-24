@@ -7,16 +7,15 @@
 ---------------------
 
 PIL最重要的类是
-:py:class:`~PIL.Image.Image` class, 你可以通过多种方法创建这个类的实例；你可以从文件加载图像，或者处理其他图像, 或者从 scratch 创建。
+:py:class:`~PIL.Image.Image` 类，绝大多数的函数都会使用到这个类的实例；可以从文件加载图像、处理其他图像或创建一个临时图像。
 
-要从文件加载图像，使用 :py:func:`~PIL.Image.open` 函数，
-在 :py:mod:`~PIL.Image` 模块::
+通过 :py:mod:`~PIL.Image` 模块中的 :py:func:`~PIL.Image.open` 函数可以从文件加载图像::
 
     >>> from PIL import Image
     >>> im = Image.open("lena.ppm")
 
-加载成功将返回一个 :py:class:`~PIL.Image.Image` 对象。
-你现在可以使用示例属性检查文件内容::
+加载成功将返回一个 :py:class:`~PIL.Image.Image` 对象，
+可以通过这个对象来获取文件的信息::
 
     >>> from __future__ import print_function
     >>> print(im.format, im.size, im.mode)
