@@ -22,13 +22,13 @@ PIL最重要的类是
     >>> print(im.format, im.size, im.mode)
     PPM (512, 512) RGB
 
-:py:attr:`~PIL.Image.Image.format` 这个属性标识了图像来源。如果图像不是从文件读取它的值就是None。size属性是一个二元tuple，包含width和height（宽度和高度，单位都是px）。
+:py:attr:`~PIL.Image.Image.format` 这个属性标识了图像来源，如果不是来自于文件，这个值会是None。size属性是一个二元组，包含width和height（宽度和高度）。
 :py:attr:`~PIL.Image.Image.mode` 属性定义了图像bands的数量和名称，以及像素类型和深度。常见的modes 有 “L”
-(luminance) 表示灰度图像, “RGB” 表示真彩色图像, and “CMYK” 表示出版图像。
+(luminance) 表示灰度图像, “RGB” 表示真彩色图像, 以及 “CMYK” 表示出版图像。
 
-如果文件打开错误，返回 :py:exc:`IOError` 错误。
+如果打开文件时出现了错误，则会抛出 :py:exc:`IOError` 异常。
 
-只要你有了 :py:class:`~PIL.Image.Image` 类的实例，你就可以通过类的方法处理图像。比如，下列方法可以显示图像::
+可以通过 :py:class:`~PIL.Image.Image` 类的实例来处理图片对象。例如下面方法可以显示图像::
 
     >>> im.show()
 
@@ -37,16 +37,17 @@ PIL最重要的类是
     标准的 :py:meth:`~PIL.Image.Image.show` 效率并不高，它需要保存图像到临时文件然后通过
     :command:`xv` 显示图像。你需要先安装 :command:`xv` ，显示图像有助于调试和测试。
 
-下面的部分提供了这个库其他函数的概览。
+常用函数：
 
 读写图像
 --------------------------
 
-PIL 模块支持大量图片格式。使用在
-:py:mod:`~PIL.Image` 模块的 :py:func:`~PIL.Image.open` 函数从磁盘读取文件。你不需要知道文件格式就能打开它，这个库能够根据文件内容自动确定文件格式。
+:py:mod:`~PIL.Image` 模块的 :py:func:`~PIL.Image.open` 函数可以打开并自动识别并解析图片类型。参数为文件名或者File-like object（使用File-like object）时需要显式指定format参数。
 
-要保存文件，使用
-:py:class:`~PIL.Image.Image` 类的 :py:meth:`~PIL.Image.Image.save` 方法。保存文件的时候文件名变得重要了。除非你指定格式，否则这个库将会以文件名的扩展名作为格式保存。
+.. note::
+    :py:func:`~PIL.Image.open` 是一个懒函数，只会读取文件头信息。当显式加载时才会真正的加载图像信息。
+
+:py:class:`~PIL.Image.Image` 类的 :py:meth:`~PIL.Image.Image.save` 方法可以将处理之后的图像保存，参数为文件名或者File-like object（使用File-like object）时需要显式指定format参数。
 
 
 转换文件格式到JPEG
@@ -66,8 +67,6 @@ PIL 模块支持大量图片格式。使用在
                 Image.open(infile).save(outfile)
             except IOError:
                 print("cannot convert", infile)
-
-:py:meth:`~PIL.Image.Image.save` 方法的第二个参数可以指定文件格式，如果你使用非标准的扩展名你必须这样做：
 
 创建 JPEG 缩略图
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -89,8 +88,6 @@ PIL 模块支持大量图片格式。使用在
                 im.save(outfile, "JPEG")
             except IOError:
                 print("cannot create thumbnail for", infile)
-
-很重要的一点是这个库不会直接解码或者加载图像栅格数据。当你打开一个文件，只会读取文件头信息用来确定格式，颜色模式，大小等等，文件的剩余部分不会主动处理。这意味着打开一个图像文件的操作十分快速，跟图片大小和压缩方式无关。下面是一个简单的脚本用来快速验证大量图片。
 
 
 验证图像文件
@@ -122,7 +119,7 @@ PIL 模块支持大量图片格式。使用在
     box = (100, 100, 400, 400)
     region = im.crop(box)
 
-矩形选区有一个4元元组定义，分别表示左、上、右、下的坐标。这个库以左上角为坐标原点，单位是px，所以上诉代码复制了一个 300x300 pixels 的矩形选区。这个选区现在可以被处理并且粘贴到原图。
+矩形选区有一个4元元组定义，分别表示左、上、右、下的坐标。这个库以左上角为坐标原点，上述代码复制了一个 300x300 的矩形选区。这个选区现在可以被处理并且粘贴到原图。
 
 处理复制的矩形选区并粘贴到原图
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
